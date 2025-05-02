@@ -1,0 +1,39 @@
+HTML Addition (add after education section):
+
+<section class="timeline skills-box">
+  <div class="title-wrapper">
+    <div class="icon-box">
+      <ion-icon name="book-outline"></ion-icon>
+    </div>
+    <h3 class="h3">Skills</h3>
+  </div>
+</section>
+
+CSS Addition (add to About.css):
+
+.skills-box {
+  background: hsla(240, 1%, 17%, 0.75);
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  margin: 20px 9px;
+  width: 45%;
+  font-family: 'Consolas', monospace;
+}
+
+.skills-box .title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.skills-box .icon-box {
+  font-size: 35px;
+  color: var(--orange-yellow-crayola);
+}
+
+.skills-box .h3 {
+  color: var(--white-2);
+  margin-left: 20px;
+  text-transform: capitalize;
+}

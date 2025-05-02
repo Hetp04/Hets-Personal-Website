@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Het's Portfolio</title>
+  
+  <link rel="shortcut icon" href="./assets/images/fol.png" type="image/png" sizes="32x32">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="./assets/css/About.css">
+<link rel="stylesheet" href="./assets/css/portfolio.css">
+<link rel="stylesheet" href="./assets/css/contact.css">
+<link rel="stylesheet" href="./assets/css/background.css">
+
+<meta property="og:title" content="Hey, My Name Is Het Patel">
+<meta property="og:description" content="Explore my portfolio showcasing my skills, projects, and experiences.">
+<meta property="og:image" content="https://patelhet.ca/assets/images/fol.png">
+<meta property="og:url" content="https://patelhet.ca">
+<meta property="og:type" content="website">
+
+<style>
+.stat-box:nth-child(3)[style*="320px"] {
+    height: 520px !important;
+}
+.stat-box:nth-child(1)[style*="320px"] {
+    height: 340px !important;
+}
+.stat-box:nth-child(2)[style*="320px"] {
+    height: 300px !important;
+}
+</style>
+
+</head>
+<body>
+
+  <div class="preloader" id="preloader">
+    <div class="terminal">
+      <div class="terminal-header">
+        <div class="terminal-buttons">
+          <div class="terminal-button red"></div>
+          <div class="terminal-button yellow"></div>
+          <div class="terminal-button green"></div>
+        </div>
+        <div class="terminal-title">portfolio.exe</div>
+      </div>
+      <div class="terminal-content">
+        <div class="progress-container">
+          <div class="progress-bar"></div>
+        </div>
+        
+        <p class="terminal-line command">initializing portfolio system...</p>
+        <p class="terminal-line response">Loading components...</p>
+        <p class="terminal-line command">npm install portfolio-dependencies</p>
+        <p class="terminal-line response">Successfully installed packages</p>
+        <p class="terminal-line command">loading Het_Patel.profile</p>
+        <p class="terminal-line response">Profile loaded successfully!</p>
+        <div class="terminal-menu hidden">
+          <p class="terminal-line">&nbsp;</p>
+          <p class="terminal-line">Welcome to Het's Portfolio Terminal</p>
+          <p class="terminal-line">&nbsp;</p>
+          <p class="terminal-line response">Please select an option and type the number below:</p>
+          <p class="terminal-line response">1. Home - Overview & Skills</p>
+          <p class="terminal-line response">2. Projects - View My Work</p>
+          <p class="terminal-line response">3. Experience - Professional Journey</p>
+          <p class="terminal-line response">4. Contact - Get In Touch</p>
+          <div class="terminal-input-line">
+            <span class="prompt">$</span>
+            <input type="text" class="terminal-input" autofocus>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+        
+          <img src="./assets/images/hetp.jpg" alt="Het Patel" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Het Patel">Het Patel</h1>
+
+          <p class="title">Fullstack Software Developer @ TSI</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:hetpate384@gmail.com" class="contact-link">hetpate384@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+16473256312" class="contact-link">+1 647 325 6312</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">University</p>
+
+              <time datetime="2022-09-01">Western University</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>London, ON</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.instagram.com/hetp04/?locale=de&hl=am-et" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/paremeter373" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.researchgate.net/profile/Hetq-Patel" class="social-link" target="_blank">
+              <i class="fab fa-researchgate"></i>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/hetp04/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <div class="main-content">
+      <div class="os-toolbar">
+        <div class="toolbar-left">
+          <div class="toolbar-nav">
+            <button class="nav-btn">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </button>
+            <button class="nav-btn">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+          </div>
+          <div class="file-path">
+            <span class="path-text">~/Portfolio/Home</span>
+          </div>
+        </div>
+        <div class="toolbar-right">
+        </div>
+      </div>
+
+    
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#resume" class="navbar-link" data-nav-link>Resume</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <article class="home" data-page="home" id="home">
+        <div class="hero">
+          <h1>Hey, My Name Is <span>Het Patel</span></h1>
+          <h2>I'm a <span class="typing"></span></h2>
+          <p>
+            Third-year student at Western University, pursuing an Honours Specialization 
+            in Computer Science with a Minor in Software Engineering. Focused on learning, growing, and tackling challenges with curiosity and determination.
+          </p>
+          <div class="button-container">
+            <a href="./assets/het.pdf" class="os-button" download>
+              <ion-icon name="document-text-outline"></ion-icon>
+              <span>Download Resume</span>
+            </a>
+            <a href="#contact" class="os-button">
+              <ion-icon name="mail-outline"></ion-icon>
+              <span>Contact Me</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="stats-container">
+          <div class="stat-box">
+            <div class="stat-box-header">
+              <div class="stat-content">
+                <div class="stat-icon">
+                  <ion-icon name="document-text"></ion-icon>
+                </div>
+                <div class="stat-info">
+                  <span class="stat-number">2</span>
+                  <span class="stat-label">Publications</span>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-content">
+              <div class="pub-item">
+                <h4>Evaluating the Efficacy of Large Language Models in Identifying Phishing Attempts</h4>
+                <p>Presented at HSI24 International Conference</p>
+              </div>
+              <div class="pub-item">
+                <h4>The Evolution of Speech Synthesis</h4>
+                <p>Upcoming conference presentation</p>
+                <p>at ACM CUI 2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-box-header">
+              <div class="stat-content">
+                <div class="stat-icon">
+                  <ion-icon name="layers"></ion-icon>
+                </div>
+                <div class="stat-info">
+                  <span class="stat-label">Full Stack Developer</span>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-content">
+              <div class="tech-stack">
+                <div class="tech-item">
+                  <i class="fab fa-python"></i>
+                  <span>Python</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fab fa-react"></i>
+                  <span>React</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fab fa-js"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fab fa-node-js"></i>
+                  <span>Node.js</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fas fa-database"></i>
+                  <span>SQLite</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fas fa-elephant"></i>
+                  <span>PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-box-header">
+              <div class="stat-content">
+                <div class="stat-icon">
+                  <ion-icon name="trophy"></ion-icon>
+                </div>
+                <div class="stat-info">
+                  <span class="stat-label">Hackathon Winner</span>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-content">
+              <div class="pub-item">
+                <h4>TrackStack</h4>
+                <p>A dynamic expense tracking platform that helps users visualize and manage their financial journey through interactive charts and analytics.</p>
+                <p>Won Best Overall Project at Duck Hacks 2024</p>
+                <p><a href="https://devpost.com/software/trackstack" target="_blank" style="color: var(--orange-yellow-crayola);">
+                  <i class="fas fa-external-link-alt"></i> View on Devpost
+                </a></p>
+              </div>
+              <div class="pub-item">
+                <h4>Piano Improvisation Platform</h4>
+                <p>Developed a piano improvisation platform that suggests notes to enhance compositions, generates custom backing tracks to harmonize music, and includes a frequency chart to assist beginners with music theory</p>
+                <p>United Hacks 2024 Winner</p>
+                <p><a href="https://devpost.com/software/sonivo" target="_blank" style="color: var(--orange-yellow-crayola);">
+                  <i class="fas fa-external-link-alt"></i> View on Devpost
+                </a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+ 
+      <article class="resume" data-page="resume" id="resume">
+        <div class="left-column">
+        <section class="timeline education-box">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Western University</h4>
+              <span>Hons. Specialization in Computer Science</span>
+              <div class="date-badge">Sept 2022 - May 2026</div>
+              <div class="achievement-badges">
+                <div class="badge">GPA: 3.7/4.0</div>
+                <div class="badge">Dean's Award</div>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Middlefield Collegiate Institute</h4>
+              <span>Ontario Secondary School Diploma</span>
+              <div class="date-badge">Sept 2018 - June 2022</div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline skills-box">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Skills</h3>
+          </div>
+          
+          <div class="skills-category">
+            <h4 class="category-title">Languages</h4>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <img src="/assets/images/python.png" alt="Python" class="skill-icon">
+                <span class="skill-name">Python</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/java.png" alt="Java" class="skill-icon">
+                <span class="skill-name">Java</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/js.png" alt="JavaScript" class="skill-icon">
+                <span class="skill-name">JavaScript</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/html.png" alt="HTML" class="skill-icon">
+                <span class="skill-name">HTML</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/css-3.png" alt="CSS" class="skill-icon">
+                <span class="skill-name">CSS</span>
+              </div>
+              
+
+             <div class="skill-item">
+              <img src="/assets/images/c-.png" alt="C" class="skill-icon">
+              <span class="skill-name">C</span>
+            </div>
+            
+            <div class="skill-item">
+              <img src="/assets/images/c.png" alt="C++" class="skill-icon">
+              <span class="skill-name">C++</span>
+            </div>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="category-title">Technologies & Tools</h4>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <img src="/assets/images/atom.png" alt="React" class="skill-icon">
+                <span class="skill-name">React</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/SQLite.png" alt="SQLite" class="skill-icon">
+                <span class="skill-name">SQLite</span>
+              </div>
+              
+              <div class="skill-item">
+                  <img src="/assets/images/elephant.png" alt="PostgreSQL" class="skill-icon">
+                <span class="skill-name">PostgreSQL</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/node.png" alt="Node.js" class="skill-icon">
+                <span class="skill-name">Node.js</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/assets/images/git.png" alt="Git" class="skill-icon">
+                <span class="skill-name">Git</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/assets/images/bash.png" alt="Bash" class="skill-icon">
+                <span class="skill-name">Bash</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/assets/images/figma.png" alt="Figma" class="skill-icon">
+                <span class="skill-name">Figma</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/assets/images/jira.png" alt="Jira" class="skill-icon">
+                <span class="skill-name">Jira</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/scrum.png" alt="Scrum" class="skill-icon">
+                <span class="skill-name">Scrum</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/assets/images/agile.png" alt="Agile" class="skill-icon">
+                <span class="skill-name">Agile</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/assets/images/sdlc.png" alt="Software Development Cycle" class="skill-icon">
+                <span class="skill-name">SDLC</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/assets/images/uml.png" alt="UML" class="skill-icon">
+                <span class="skill-name">UML</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/assets/images/vue.png" alt="Vue.js" class="skill-icon">
+                <span class="skill-name">Vue.js</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/flask.jpg" alt="Flask" class="skill-icon">
+                <span class="skill-name">Flask</span>
+              </div>
+
+            
+            </div>
+          </div>
+        </section>
+
+    </div>
+	<div class="right-column">
+    
+        <section class="timeline work-box">
+          <div class="work-title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="work-timeline-list">
+            <li class="work-timeline-item">
+              <div class="work-header">
+                <h4 class="h4 work-item-title">Software Developer @ TSI</h4>
+                <span>Toronto, ON</span>
+                <div class="work-meta">
+                  <div class="work-date-badge">October 2024 - Present</div>
+                  <button class="toggle-btn">▼</button>
+                </div>
+              </div>
+              <div class="work-details hidden">
+                <ul class="work-points">
+                  <li>Developing a certification-based learning platform that enables users to complete courses, earn certifications, and manage their skills through an intuitive interface</li>
+                  <li>Aided in backend development by setting up server.js, authentication, Postgres database, and API endpoints, along with implementing features to manage certifications and skills.</li>
+                  <li>Designed and developed frontend components, including responsive login/signup pages, dynamic profile displays, and intuitive navigation for an enhanced user experience.</li>
+                </ul>
+              </div>
+            </li> 
+
+            <li class="work-timeline-item">
+              <div class="work-header">
+                <h4 class="h4 work-item-title">LLM's Research Assistant</h4>
+                <div class="work-location">
+                  <span>Western University</span>
+                  <span class="work-location-sub">HCCG (Human Centered Computing Group)</span>
+                </div>
+                <div class="work-meta">
+                  <div class="work-date-badge">May 2024 - Present</div>
+                  <button class="toggle-btn">▼</button>
+                </div>
+              </div>
+              <div class="work-details hidden">
+                <ul class="work-points">
+                  <li>Developed an annotation system to facilitate advanced natural language processing tasks, including text classification, sentiment analysis, and entity recognition.
+                  </li>
+                  <li>Tested a fine-tuned LLM on domain-specific datasets to improve sentiment analysis performance.
+                  </li>
+                  <li>Enhanced the annotation tool by integrating capabilities for annotating text, audio, and video, enabling detailed analysis of multi-format interactions.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="work-timeline-item">
+              <div class="work-header">
+                <h4 class="h4 work-item-title">Undergraduate Research Assistant</h4>
+                <div class="work-location">
+                  <span>Western University</span>
+                  <span class="work-location-sub">HCCG (Human Centered Computing Group)</span>
+                </div>
+                <div class="work-meta">
+                  <div class="work-date-badge">February 2024 - April 2024</div>
+                  <button class="toggle-btn">▼</button>
+                </div>
+              </div>
+              <div class="work-details hidden">
+                <ul class="work-points">
+                  <li>Authored an academic paper focused on leveraging LLM's to identify and mitigate phishing email threats; accepted for presentation at the HSI 24 international conference.</li>
+                  <li>Enhanced data interpretability through statistical analysis and data visualization techniques, including linear regression and k-means clustering.</li>
+                  <li>Analyzed performance metrics like mean, standard deviation, and percentile distributions for various AI models to evaluate their effectiveness in detecting phishing emails</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </section>
+      
+      <section class="timeline new-box">
+        <div class="new-title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="document-text-outline"></ion-icon>
+          </div>
+          <h3 class="h3">Publications</h3>
+        </div>
+
+        <div class="publication-item">
+          <h4 class="publication-title">Evaluating the Efficacy of Large Language Models in Identifying Phishing Attempts</h4>
+          <p class="publication-venue">HSI24 International Conference
+            <a href="https://www.researchgate.net/profile/Umair-Rehman-4/publication/383008151_Evaluating_the_Efficacy_of_Large_Language_Models_in_Identifying_Phishing_Attempts/links/66d7aa72fa5e11512c736e81/Evaluating-the-Efficacy-of-Large-Language-Models-in-Identifying-Phishing-Attempts.pdf" 
+               target="_blank" 
+               class="publication-link"
+               title="View Publication">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </p>
+        </div>
+
+        <div class="publication-item">
+          <h4 class="publication-title">The Evolution of Speech Synthesis</h4>
+          <p class="publication-venue">ACM CUI 2025 (upcoming conference presentation)</p>
+        </div>
+      </section>
+	  </article>
+     
+      <article class="portfolio" data-page="portfolio" id="portfolio">
+
+
+        <div class="portfolio-grid">
+          <div class="project-card">
+            <div class="project-preview development-preview">
+              <ion-icon name="construct-outline"></ion-icon>
+              <span class="development-text">In Development</span>
+            </div>
+
+            <h4 class="project-title">Financial Expense Tracker</h4>
+
+            <div class="project-tags">
+              <span class="project-tag">
+                <ion-icon name="logo-react"></ion-icon>
+                React
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-nodejs"></ion-icon>
+                Node.js
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-javascript"></ion-icon>
+                JS
+              </span>
+            </div>
+
+            <p class="project-description">
+              A dynamic web application that enables users to track their daily expenses and visualize spending patterns through interactive charts, helping users make informed financial decisions.
+            </p>
+
+            <div class="project-meta">
+                <div class="project-date">
+                    Dec 2023 - Present
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/paremeter373/Expense-Tracker-" class="project-link">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </div>
+            </div>
+          </div>
+
+
+
+          <div class="project-card">
+            <div class="project-preview">
+              <img src="./assets/images/meme2.png" alt="MemeStudy AI Learning Assistant Preview">
+            </div>
+
+            <h4 class="project-title">MemeStudy: AI Learning Assistant</h4>
+
+            <div class="project-tags">
+              <span class="project-tag">
+                <ion-icon name="logo-react"></ion-icon>
+                React
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-html5"></ion-icon>
+                HTML/CSS
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-python"></ion-icon>
+                Python
+              </span>
+              <span class="project-tag">
+                <ion-icon name="server-outline"></ion-icon>
+                Flask
+              </span>
+              <span class="project-tag">
+                <ion-icon name="server-outline"></ion-icon>
+                SQLite
+              </span>
+              <span class="project-tag">
+                <ion-icon name="cloud-outline"></ion-icon>
+                GroqAPI
+              </span>
+            </div>
+
+            <p class="project-description">
+              A learning platform that transforms traditional studying into an engaging experience by generating relevant memes for user-created flashcards and questions, making education both fun and memorable.
+            </p>
+
+            <div class="project-meta">
+                <div class="project-date">
+                    July 2024 - July 2024
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/paremeter373/Memeify-Project" class="project-link">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=TcF87fI3IfA" class="project-link">
+                        <ion-icon name="open-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-preview">
+              <img src="./assets/images/anno3.png" alt="Annotation Tool Preview">
+            </div>
+
+            <h4 class="project-title">Annotation Tool</h4>
+
+            <div class="project-tags">
+              <span class="project-tag">
+                <ion-icon name="logo-html5"></ion-icon>
+                HTML
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-css3"></ion-icon>
+                CSS
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-firebase"></ion-icon>
+                Firebase
+              </span>
+              <span class="project-tag">
+                <ion-icon name="server-outline"></ion-icon>
+                SQLite
+              </span>
+            </div>
+
+            <p class="project-description">
+              Developing a full-stack annotation tool to streamline data labeling and support training Large Language Models. This tool enables the extraction of critical information such as labels, codes, and key phrases directly from text, significantly reducing the time and effort required for manual annotation.
+            </p>
+
+            <div class="project-meta">
+                <div class="project-date">
+                    May 2024 - Present
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/paremeter373/LLM-Annotation-Tool-" class="project-link">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-preview">
+              <img src="./assets/images/stu.png" alt="Certification Management System Preview">
+            </div>
+
+            <h4 class="project-title">Certification Management System</h4>
+
+            <div class="project-tags">
+              <span class="project-tag">
+                <ion-icon name="logo-react"></ion-icon>
+                React
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-nodejs"></ion-icon>
+                Node.js
+              </span>
+              <span class="project-tag">
+                <ion-icon name="server-outline"></ion-icon>
+                MongoDB
+              </span>
+              <span class="project-tag">
+                <ion-icon name="server-outline"></ion-icon>
+                Express.js
+              </span>
+            </div>
+
+            <p class="project-description">
+              A comprehensive platform enabling users to complete courses, earn certifications, and manage their skills through an intuitive interface with authentication. Users will be able to track their progress and receive certifications upon completing specific courses. The platform will also offer personalized learning paths.
+            </p>
+
+            <div class="project-meta">
+                <div class="project-date">
+                    October 2023 - Present
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Christopher4113/YOU" class="project-link">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-preview">
+              <img src="./assets/images/wns.jpg" alt="Notification System Preview">
+            </div>
+
+            <h4 class="project-title">Notification Management System</h4>
+
+            <div class="project-tags">
+              <span class="project-tag">
+                <ion-icon name="logo-react"></ion-icon>
+                React
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-nodejs"></ion-icon>
+                Node.js
+              </span>
+              <span class="project-tag">
+                <ion-icon name="server-outline"></ion-icon>
+                MongoDB
+              </span>
+              <span class="project-tag">
+                <ion-icon name="flash-outline"></ion-icon>
+                Socket.IO
+              </span>
+              <span class="project-tag">
+                <ion-icon name="desktop-outline"></ion-icon>
+                Electron.js
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-windows"></ion-icon>
+                Windows API
+              </span>
+              
+            </div>
+
+            <p class="project-description">
+              A desktop application built with Electron.js that helps users manage notification overload by monitoring and blocking excessive notifications from selected messaging apps that are available on Windows. This system works by tracking notification frequency and blocks them when they exceed one every three seconds.
+            </p>
+
+            <div class="project-meta">
+              <div class="project-date">
+                Aug 2024 - Aug 2024
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+      </article>
+
+   
+
+      <article class="contact" data-page="contact" id="contact">
+        <section class="contact-form">
+          <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form id="contact-form">
+            <input type="hidden" name="access_key" value="7e8fb128-9e5d-48ce-9b59-4921e1b6c7e2">
+            
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <div class="input-wrapper">
+              <input type="text" name="name" class="form-input" placeholder="Your name" required>
+              <input type="email" name="email" class="form-input" placeholder="Your email" required>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your message" required></textarea>
+
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+    </div>
+
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+
+  
+
+</html>
