@@ -193,17 +193,17 @@
 
 .education-box {
   background: hsl(0deg 0% 15.51%);
-  padding: 30px;
+  padding: 35px;
+  min-height: 280px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   margin: 20px 9px;
-  
   font-family: 'Consolas', monospace;
 }
 
 .education-box .timeline-list {
   margin-left: 30px;
-  padding: 10px;
+  padding: 15px 10px;
 }
 
 /* Timeline styling */
@@ -285,7 +285,8 @@
 .achievement-badges {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
+  margin-top: 12px;
 }
 
 .badge-row {
@@ -297,7 +298,7 @@
 .badge {
   background-color: var(--onyx);
   color: var(--light-gray);
-  padding: 4px 12px;
+  padding: 6px 14px;
   font-size: 0.9em;
   border: 1px solid var(--jet);
   border-radius: 4px;
