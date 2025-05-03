@@ -193,47 +193,114 @@
 
 .education-box {
   background: hsl(0deg 0% 15.51%);
-  padding: 35px;
+  padding: 30px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   margin: 20px 9px;
-  min-height: 280px;
+  
   font-family: 'Consolas', monospace;
 }
 
 .education-box .timeline-list {
   margin-left: 30px;
-  padding: 15px 10px;
+  padding: 10px;
 }
 
-.education-box .timeline-item {
-  margin-bottom: 25px;
+/* Timeline styling */
+.education-box .timeline-item::before,
+.education-box .timeline-item::after {
+  content: "";
+  position: absolute;
+  left: -48px;
+  background: var(--orange-yellow-crayola);
 }
 
-.education-box .timeline-item-title {
-  margin-bottom: 10px;
+.education-box .timeline-item::before {
+  top: 5px;
+  left: -28px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.education-box .timeline-item::after {
+  top: 15px;
+  left: -23px;
+  width: 2px;
+  height: 185%;
+}
+
+/* Text styling */
+.education-box .timeline-text,
+.education-box .h4,
+.education-box span,
+.date-badge {
+  font-family: 'Consolas', monospace;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.education-box .timeline-text {
+  color: var(--light-gray-70);
+  font-size: 14px;
+}
+
+.education-box .h4 {
+  color: var(--white-1);
+  font-weight: 400;
+}
+
+.education-box span {
+  color: var(--light-gray);
+  font-size: 13px;
+  opacity: 0.9;
+  white-space: nowrap;
+}
+
+.date-badge {
+  display: inline-block;
+  background: var(--eerie-black-1);
+  color: var(--orange-yellow-crayola);
+  padding: 6px 12px;
+  border-radius: 12px;
+  margin-top: 8px;
+  box-shadow: var(--shadow-1);
+  border: 1px solid var(--border-color);
+  font-size: 12px;
+}
+
+/* Added new styles for the section title */
+.education-box .title-wrapper {
+  margin-bottom: 30px;
+  padding-left: 0;
+}
+
+.education-box .title-wrapper .h3 {
+  font-family: 'Consolas', monospace;
+  color: var(--white-2);
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .achievement-badges {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-top: 12px;
+  gap: 8px;
 }
 
 .badge-row {
   display: flex;
-  gap: 12px;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .badge {
-  background: var(--eerie-black-1);
+  background-color: var(--onyx);
   color: var(--light-gray);
-  padding: 6px 14px;
-  border-radius: 12px;
-  font-size: 0.85rem;
+  padding: 4px 12px;
+  font-size: 0.9em;
   border: 1px solid var(--jet);
+  border-radius: 4px;
   transition: all 0.3s ease;
 }
 
