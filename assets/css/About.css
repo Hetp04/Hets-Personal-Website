@@ -284,20 +284,32 @@
 
 .achievement-badges {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  gap: 8px;
   margin-top: 10px;
 }
 
+.badge-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .badge {
-  display: inline-block;
   background: var(--eerie-black-1);
-  color: var(--white-2);
-  padding: 6px 12px;
+  color: var(--light-gray);
+  padding: 4px 12px;
   border-radius: 12px;
-  font-size: 12px;
-  border: 1px solid var(--border-color);
-  font-family: 'Consolas', monospace;
-} 
+  font-size: 0.85rem;
+  border: 1px solid var(--jet);
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  border-color: var(--orange-yellow-crayola);
+  color: var(--orange-yellow-crayola);
+  transform: translateY(-2px);
+}
 
 .new-box{
   background: hsl(0deg 0% 15.51%);
