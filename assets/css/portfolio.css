@@ -210,6 +210,20 @@
   object-fit: cover;
 }
 
+.carousel-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #121212;
+}
+
+.video-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #121212;
+}
+
 .carousel-control {
   position: absolute;
   top: 50%;
