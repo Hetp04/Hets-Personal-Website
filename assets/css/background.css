@@ -1,0 +1,216 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  background: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease-out;
+  font-family: 'Consolas', monospace;
+}
+
+.preloader.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.terminal {
+  width: 800px;
+  max-width: 95%;
+  height: 520px;
+  background: #242424;
+  border-radius: 12px;
+  padding: 25px;
+  position: relative;
+  overflow-y: scroll; 
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #333;
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.terminal-button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.terminal-button.red { 
+    background: #ff5f56;
+ }
+.terminal-button.yellow { 
+    background: #ffbd2e;
+ }
+.terminal-button.green {
+     background: #27c93f;
+     }
+
+.terminal-title {
+  color: #666;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+.terminal-content {
+  color: var(--orange-yellow-crayola);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.terminal-line {
+  margin: 0;
+  min-height: 20px;
+  opacity: 0;
+  transform: translateY(5px);
+  animation: fadeInUp 0.3s ease forwards;
+}
+
+.terminal-line.command::before {
+  content: "$ ";
+  color: var(--orange-yellow-crayola);
+}
+
+.terminal-line.response {
+  color: var(--light-gray);
+  margin-left: 15px;
+}
+
+.terminal-input-line {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.prompt {
+  color: var(--orange-yellow-crayola);
+}
+
+.terminal-input {
+  background: transparent;
+  border: none;
+  color: var(--orange-yellow-crayola);
+  font-family: inherit;
+  font-size: inherit;
+  width: 100%;
+  outline: none;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+:root {
+  --type-delay: 0.2s;
+  --menu-delay: 1.4s;
+}
+
+/* Initial loading sequence */
+.terminal-content > .terminal-line {
+  animation-delay: 1.7s;
+}
+
+.terminal-content > .terminal-line:nth-child(3) {
+  animation-delay: 1.9s;
+}
+
+.terminal-content > .terminal-line:nth-child(4) {
+  animation-delay: 2.1s;
+}
+
+.terminal-content > .terminal-line:nth-child(5) {
+  animation-delay: 2.3s;
+}
+
+.terminal-content > .terminal-line:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+.terminal-content > .terminal-line:nth-child(7) {
+  animation-delay: 2.7s;
+}
+
+.terminal-menu .terminal-line:nth-child(1) {
+  animation-delay: 1.5s;
+}
+
+.terminal-menu .terminal-line:nth-child(2) {
+  animation-delay: 1.6s;
+}
+
+.terminal-menu .terminal-line:nth-child(3) {
+  animation-delay: 1.7s;
+}
+
+.terminal-menu .terminal-line:nth-child(4) {
+  animation-delay: 1.8s;
+}
+
+.terminal-menu .terminal-line:nth-child(5) {
+  animation-delay: 1.9s;
+}
+
+.terminal-menu .terminal-line:nth-child(6) {
+  animation-delay: 2.0s;
+}
+
+.terminal-menu .terminal-line:nth-child(7) {
+  animation-delay: 2.1s;
+}
+
+.terminal-menu .terminal-line:nth-child(8) {
+  animation-delay: 2.2s;
+}
+
+.terminal-menu .terminal-input-line {
+  animation-delay: 2.3s;
+}
+
+.hidden { display: none; }
+
+.terminal-line.dynamic {
+  opacity: 1;
+  transform: none;
+  animation: none;
+}
+
+/* Add these styles for the progress bar */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: var(--eerie-black-1);
+  border-radius: 4px;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background: var(--orange-yellow-crayola);
+  border-radius: 4px;
+  animation: progress 0.8s ease-in-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+} 

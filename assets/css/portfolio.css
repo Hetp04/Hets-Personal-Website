@@ -1,0 +1,344 @@
+.portfolio {
+  padding: 30px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-card {
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid var(--jet);
+  position: relative;
+  min-height: 400px;
+  font-family: 'Consolas', monospace;
+  letter-spacing: 0.5px;
+  padding-bottom: 60px;
+  transition: all 0.3s ease;
+  background: hsla(240, 1%, 17%, 0.75);
+}
+
+.project-card:hover {
+  border-color: var(--orange-yellow-crayola);
+  box-shadow: 
+    0 0 25px rgba(132, 190, 199, 0.1),
+    0 0 45px rgba(132, 190, 199, 0.1);
+  transform: translateY(-5px);
+}
+
+.project-card:hover .project-title {
+  color: var(--orange-yellow-crayola);
+}
+
+.project-preview {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.project-preview img {
+  width: 100%;
+  height: 300px; 
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.project-title {
+  color: var(--light-gray);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-family: 'Consolas', monospace;
+  letter-spacing: 0.8px;
+  transition: color 0.3s ease;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0;
+}
+
+.project-tag {
+  background: var(--jet);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  color: var(--light-gray);
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Consolas', monospace;
+  letter-spacing: 0.5px;
+}
+
+.project-tag:hover {
+  background: var(--light-gray-70);
+}
+
+.project-tag ion-icon {
+  font-size: 1em;
+  margin-top: 1px;
+}
+
+.project-description {
+  color: var(--light-gray);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  font-family: 'Consolas', monospace;
+  letter-spacing: 0.2px;
+}
+
+.project-meta {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.project-date {
+  display: inline-block;
+  background: var(--eerie-black-1);
+  color: var(--light-gray);
+  padding: 6px 12px;
+  border-radius: 12px;
+  margin-top: 8px;
+  box-shadow: var(--shadow-1);
+  border: 1px solid var(--border-color);
+  font-size: 0.8rem;
+  font-family: 'Consolas', monospace;
+  letter-spacing: 0.2px;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover .project-date {
+  color: var(--orange-yellow-crayola);
+  border-color: var(--orange-yellow-crayola);
+}
+
+.project-links {
+  display: flex;
+  gap: 12px;
+}
+
+.project-link {
+  color: var(--light-gray);
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.project-link:hover {
+  color: var(--orange-yellow-crayola);
+}
+
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.development-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background: var(--eerie-black-2);
+  border-radius: 8px;
+}
+
+.development-preview ion-icon {
+  font-size: 80px;
+  color: var(--orange-yellow-crayola);
+  opacity: 0.9;
+}
+
+.development-text {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: var(--light-gray);
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Consolas', monospace;
+}
+
+.development-badge {
+  color: var(--light-gray);
+  font-size: 0.75rem;
+  margin-left: 8px;
+  opacity: 0.8;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%;
+}
+
+.carousel-item {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #121212;
+}
+
+.video-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #121212;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(70, 70, 70, 0.6);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  z-index: 2;
+  backdrop-filter: blur(2px);
+}
+
+.carousel-control:hover {
+  background: rgba(90, 90, 90, 0.7);
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+
+.carousel-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-indicator.active {
+  background: var(--orange-yellow-crayola);
+}
+
+.fullscreen-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(70, 70, 70, 0.6);
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 2;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+}
+
+.fullscreen-icon:hover {
+  background: rgba(90, 90, 90, 0.7);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90vh;
+  position: relative;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.modal-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px;
+}

@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Het's Portfolio</title>
+  
+  <link rel="shortcut icon" href="/assets/images/fol.png" type="image/png" sizes="32x32">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/About.css">
+<link rel="stylesheet" href="/assets/css/portfolio.css">
+<link rel="stylesheet" href="/assets/css/contact.css">
+<link rel="stylesheet" href="/assets/css/background.css">
+
+<meta property="og:title" content="Hey, My Name Is Het Patel">
+<meta property="og:description" content="Explore my portfolio showcasing my skills, projects, and experiences.">
+<meta property="og:image" content="https://patelhet.ca/assets/images/fol.png">
+<meta property="og:url" content="https://patelhet.ca">
+<meta property="og:type" content="website">
+
+<style>
+.stat-box:nth-child(3)[style*="320px"] {
+    height: 520px !important;
+}
+.stat-box:nth-child(1)[style*="320px"] {
+    height: 300px !important;
+}
+.stat-box:nth-child(2)[style*="320px"] {
+    height: 300px !important;
+}
+
+.concepts-grid .concept-item {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+.concepts-grid .concept-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.concepts-grid .skill-name {
+    text-align: center;
+}
+</style>
+
+</head>
+<body>
+
+  <div class="preloader" id="preloader">
+    <div class="terminal">
+      <div class="terminal-header">
+        <div class="terminal-buttons">
+          <div class="terminal-button red"></div>
+          <div class="terminal-button yellow"></div>
+          <div class="terminal-button green"></div>
+        </div>
+        <div class="terminal-title">portfolio.exe</div>
+      </div>
+      <div class="terminal-content">
+        <div class="progress-container">
+          <div class="progress-bar"></div>
+        </div>
+        
+        <p class="terminal-line command">initializing portfolio system...</p>
+        <p class="terminal-line response">Loading components...</p>
+        <p class="terminal-line command">npm install portfolio-dependencies</p>
+        <p class="terminal-line response">Successfully installed packages</p>
+        <p class="terminal-line command">loading Het_Patel.profile</p>
+        <p class="terminal-line response">Profile loaded successfully!</p>
+        <div class="terminal-menu hidden">
+          <p class="terminal-line">&nbsp;</p>
+          <p class="terminal-line">Welcome to Het's Portfolio Terminal</p>
+          <p class="terminal-line">&nbsp;</p>
+          <p class="terminal-line response">Please select an option and type the number below:</p>
+          <p class="terminal-line response">1. Home - Overview & Skills</p>
+          <p class="terminal-line response">2. Projects - View My Work</p>
+          <p class="terminal-line response">3. Experience - Professional Journey</p>
+          <p class="terminal-line response">4. Contact - Get In Touch</p>
+          <div class="terminal-input-line">
+            <span class="prompt">$</span>
+            <input type="text" class="terminal-input" autofocus>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+        
+          <img src="/assets/images/hetp.jpg" alt="Het Patel" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Het Patel">Het Patel</h1>
+
+          <p class="title">Fullstack Software Developer @ YOU</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:hetpate384@gmail.com" class="contact-link">hetpate384@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+16473256312" class="contact-link">+1 647 325 6312</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">University</p>
+
+              <time datetime="2022-09-01">Western University</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>London, ON</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.instagram.com/hetp04/?locale=de&hl=am-et" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Hetp04" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.researchgate.net/profile/Hetq-Patel" class="social-link" target="_blank">
+              <i class="fab fa-researchgate"></i>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/hetp04/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <div class="main-content">
+      <div class="os-toolbar">
+        <div class="toolbar-left">
+          <div class="toolbar-nav">
+            <button class="nav-btn">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </button>
+            <button class="nav-btn">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+          </div>
+          <div class="file-path">
+            <span class="path-text">~/Portfolio/Home</span>
+          </div>
+        </div>
+        <div class="toolbar-right">
+        </div>
+      </div>
+
+    
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#resume" class="navbar-link" data-nav-link>Resume</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <article class="home" data-page="home" id="home">
+        <div class="hero">
+          <h1>Hey, My Name Is <span>Het Patel</span></h1>
+          <h2>I'm a <span class="typing"></span></h2>
+          <p>
+            Third-year student at Western University, pursuing an Honours Specialization 
+            in Computer Science with a Minor in Software Engineering. Focused on learning, growing, and tackling challenges with curiosity and determination.
+          </p>
+          <div class="button-container">
+            <a href="./assets/patel.pdf" class="os-button" download>
+              <ion-icon name="document-text-outline"></ion-icon>
+              <span>Download Resume</span>
+            </a>
+            <a href="#contact" class="os-button">
+              <ion-icon name="mail-outline"></ion-icon>
+              <span>Contact Me</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="stats-container">
+          <div class="stat-box">
+            <div class="stat-box-header">
+              <div class="stat-content">
+                <div class="stat-icon">
+                  <ion-icon name="document-text"></ion-icon>
+                </div>
+                <div class="stat-info">
+                  <span class="stat-number">2</span>
+                  <span class="stat-label">Publications</span>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-content">
+              <div class="pub-item">
+                <h4>Evaluating the Efficacy of Large Language Models in Identifying Phishing Attempts</h4>
+                <p>Presented at HSI24 International Conference</p>
+              </div>
+              <div class="pub-item">
+                <h4>The Evolution of Speech Synthesis</h4>
+                <p>Upcoming conference presentation</p>
+                <p>at ACM CUI 2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-box-header">
+              <div class="stat-content">
+                <div class="stat-icon">
+                  <ion-icon name="layers"></ion-icon>
+                </div>
+                <div class="stat-info">
+                  <span class="stat-label">Full Stack Developer</span>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-content">
+              <div class="tech-stack">
+                <div class="tech-item">
+                  <i class="fab fa-python"></i>
+                  <span>Python</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fab fa-react"></i>
+                  <span>React</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fab fa-js"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fab fa-node-js"></i>
+                  <span>Node.js</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fas fa-database"></i>
+                  <span>SQLite</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fas fa-elephant"></i>
+                  <span>PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-box-header">
+              <div class="stat-content">
+                <div class="stat-icon">
+                  <ion-icon name="trophy"></ion-icon>
+                </div>
+                <div class="stat-info">
+                  <span class="stat-label">Hackathon Winner</span>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-content">
+              <div class="pub-item">
+                <h4>TrackStack</h4>
+                <p>A dynamic expense tracking platform that helps users visualize and manage their financial journey through interactive charts and analytics.</p>
+                <p>Won Best Overall Project at Duck Hacks 2024</p>
+                <p><a href="https://devpost.com/software/trackstack" target="_blank" style="color: var(--orange-yellow-crayola);">
+                  <i class="fas fa-external-link-alt"></i> View on Devpost
+                </a></p>
+              </div>
+              <div class="pub-item">
+                <h4>Piano Improvisation Platform</h4>
+                <p>Developed a piano improvisation platform that suggests notes to enhance compositions, generates custom backing tracks to harmonize music, and includes a frequency chart to assist beginners with music theory</p>
+                <p>United Hacks 2024 Winner</p>
+                <p><a href="https://devpost.com/software/sonivo" target="_blank" style="color: var(--orange-yellow-crayola);">
+                  <i class="fas fa-external-link-alt"></i> View on Devpost
+                </a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+ 
+      <article class="resume" data-page="resume" id="resume">
+        <div class="left-column">
+        <section class="timeline education-box">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Western University</h4>
+              <span>Hons. Specialization in Computer Science</span>
+              <div class="date-badge">Sept 2022 - May 2026</div>
+              <div class="achievement-badges">
+                <div class="badge-row">
+                  <div class="badge">GPA: 3.8/4.0</div>
+                  <div class="badge">Dean's Award</div>
+                </div>
+                <div class="badge-row">
+                  <div class="badge">NSERC USRI ($9600)</div>
+                </div>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Middlefield Collegiate Institute</h4>
+              <span>Ontario Secondary School Diploma</span>
+              <div class="date-badge">Sept 2018 - June 2022</div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline skills-box">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Skills</h3>
+          </div>
+          
+          <div class="skills-category">
+            <h4 class="category-title">Languages</h4>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <img src="/assets/images/c-.png" alt="C" class="skill-icon">
+                <span class="skill-name">C</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/c.png" alt="C++" class="skill-icon">
+                <span class="skill-name">C++</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/js.png" alt="JavaScript" class="skill-icon">
+                <span class="skill-name">JavaScript</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/typescript.png" alt="TypeScript" class="skill-icon">
+                <span class="skill-name">TypeScript</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/python.png" alt="Python" class="skill-icon">
+                <span class="skill-name">Python</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/java.png" alt="Java" class="skill-icon">
+                <span class="skill-name">Java</span>
+              </div>
+
+             <div class="skill-item">
+                <img src="/assets/images/elephant.png" alt="PostgreSQL" class="skill-icon">
+                <span class="skill-name">PostgreSQL</span>
+            </div>
+            
+            <div class="skill-item">
+                <img src="/assets/images/mysql.png" alt="MySQL" class="skill-icon">
+                <span class="skill-name">MySQL</span>
+            </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/sql-server.png" alt="MS SQL Server" class="skill-icon">
+                <span class="skill-name">MS SQL Server</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/xml.png" alt="XML" class="skill-icon">
+                <span class="skill-name">XML</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="category-title">Frameworks</h4>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <img src="/assets/images/atom.png" alt="React.js" class="skill-icon">
+                <span class="skill-name">React.js</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/nextjs.png" alt="Next.js" class="skill-icon">
+                <span class="skill-name">Next.js</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/express.png" alt="Express.js" class="skill-icon">
+                <span class="skill-name">Express.js</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/flask.jpg" alt="Flask" class="skill-icon">
+                <span class="skill-name">Flask</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/node.png" alt="Node.js" class="skill-icon">
+                <span class="skill-name">Node.js</span>
+              </div>
+            </div>
+              </div>
+
+          <div class="skills-category">
+            <h4 class="category-title">Developer Tools & Platforms</h4>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <img src="/assets/images/git.png" alt="Git" class="skill-icon">
+                <span class="skill-name">Git</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/assets/images/jira.png" alt="Jira" class="skill-icon">
+                <span class="skill-name">Jira</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/assets/images/confluence.png" alt="Confluence" class="skill-icon">
+                <span class="skill-name">Confluence</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/assets/images/selenium.png" alt="Selenium" class="skill-icon">
+                <span class="skill-name">Selenium</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/azure.png" alt="Azure" class="skill-icon">
+                <span class="skill-name">Azure</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/assets/images/linux.png" alt="Linux" class="skill-icon">
+                <span class="skill-name">Linux</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/assets/images/unix.png" alt="Unix" class="skill-icon">
+                <span class="skill-name">Unix</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/assets/images/web-services.png" alt="Web Services" class="skill-icon">
+                <span class="skill-name">Web Services</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/assets/images/figma.png" alt="Figma" class="skill-icon">
+                <span class="skill-name">Figma</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/assets/images/power-bi.png" alt="Power BI" class="skill-icon">
+                <span class="skill-name">Power BI</span>
+              </div>
+            </div>
+              </div>
+
+          <div class="skills-category">
+            <h4 class="category-title">Concepts</h4>
+            <div class="skills-grid concepts-grid">
+              <div class="skill-item concept-item">
+                <span class="skill-name">Software Development Life Cycle</span>
+              </div>
+              
+              <div class="skill-item concept-item">
+                <span class="skill-name">Agile Methods</span>
+              </div>
+              
+              <div class="skill-item concept-item">
+                <span class="skill-name">OOP</span>
+              </div>
+              
+              <div class="skill-item concept-item">
+                <span class="skill-name">SOLID Principles</span>
+              </div>
+              
+              <div class="skill-item concept-item">
+                <span class="skill-name">Unit Testing</span>
+              </div>
+              
+              <div class="skill-item concept-item">
+                <span class="skill-name">RESTful APIs</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    </div>
+	<div class="right-column">
+    
+        <section class="timeline work-box">
+          <div class="work-title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="work-timeline-list">
+            <li class="work-timeline-item">
+              <div class="work-header">
+                <h4 class="h4 work-item-title">Fullstack Software Developer</h4>
+                <div class="work-location">
+                  <span>Tech for Social Impact Club | Youth Opportunities Unlimited (YOU)</span>
+                  <span class="work-location-sub">London, ON</span>
+                </div>
+                <div class="work-meta">
+                  <div class="work-date-badge">Oct 2024 - April 2025</div>
+                  <button class="toggle-btn">▼</button>
+                </div>
+              </div>
+              <div class="work-details hidden">
+                <ul class="work-points">
+                  <li>Developing a certification-based learning platform that enables users to complete courses, earn certifications, and manage their skills through an intuitive interface.</li>
+                  <li>Aided in backend development by setting up server.js, authentication with JWT, Postgres database, and API endpoints, along with implementing features to manage certifications and skills.</li>
+                  <li>Designing and developing frontend components, including responsive login/signup pages, dynamic profile displays, and intuitive navigation with React and Redux to enhance user experience and manage state.</li>
+                </ul>
+              </div>
+            </li> 
+
+            <li class="work-timeline-item">
+              <div class="work-header">
+                <h4 class="h4 work-item-title">Software Developer</h4>
+                <div class="work-location">
+                  <span>Human Centered Computing Group | Western University</span>
+                  <span class="work-location-sub">London, ON</span>
+                </div>
+                <div class="work-meta">
+                  <div class="work-date-badge">May 2024 - Present</div>
+                  <button class="toggle-btn">▼</button>
+                </div>
+              </div>
+              <div class="work-details hidden">
+                <ul class="work-points">
+                  <li>Developed a Chrome extension for NLP annotation that allows users to highlight text and extract key information for text classification, sentiment analysis, and entity recognition, significantly reducing manual annotation effort.</li>
+                  <li>Added functionality for users to share annotations via QR codes and a built-in messaging system, making collaboration more seamless and improving annotation organization by category.</li>
+                  <li>Enhanced the annotation tool by integrating capabilities for annotating text, audio, and video to support detailed analysis of multi-format interactions.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="work-timeline-item">
+              <div class="work-header">
+                <h4 class="h4 work-item-title">Undergraduate Research Assistant</h4>
+                <div class="work-location">
+                  <span>Human Centered Computing Group | Western University</span>
+                  <span class="work-location-sub">London, ON</span>
+                </div>
+                <div class="work-meta">
+                  <div class="work-date-badge">Feb 2024 - Apr 2024</div>
+                  <button class="toggle-btn">▼</button>
+                </div>
+              </div>
+              <div class="work-details hidden">
+                <ul class="work-points">
+                  <li>Authored an academic paper on using LLMs to detect phishing threats, including migrating and analyzing data from over 4,000 fraudulent emails; presented findings at the HSI 24 International Conference.</li>
+                  <li>Enhanced data interpretability by utilizing statistical analysis and data visualization techniques through R.</li>
+                  <li>Conducted performance analysis on 15 AI models by calculating metrics such as mean, standard deviation, and percentile distributions, identifying ChatGPT 3.5 as the top performer with a detection accuracy of 98%.</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </section>
+      
+      <section class="timeline new-box">
+        <div class="new-title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="document-text-outline"></ion-icon>
+          </div>
+          <h3 class="h3">Publications</h3>
+        </div>
+
+        <div class="publication-item">
+          <h4 class="publication-title">Evaluating the Efficacy of Large Language Models in Identifying Phishing Attempts</h4>
+          <p class="publication-venue">HSI24 International Conference
+            <a href="https://www.researchgate.net/profile/Umair-Rehman-4/publication/383008151_Evaluating_the_Efficacy_of_Large_Language_Models_in_Identifying_Phishing_Attempts/links/66d7aa72fa5e11512c736e81/Evaluating-the-Efficacy-of-Large-Language-Models-in-Identifying-Phishing-Attempts.pdf" 
+               target="_blank" 
+               class="publication-link"
+               title="View Publication">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </p>
+        </div>
+
+        <div class="publication-item">
+          <h4 class="publication-title">The Evolution of Speech Synthesis</h4>
+          <p class="publication-venue">ACM CUI 2025 (upcoming conference presentation)</p>
+        </div>
+      </section>
+	  </article>
+     
+      <article class="portfolio" data-page="portfolio" id="portfolio">
+
+        <div class="portfolio-grid">
+          <div class="project-card">
+            <div class="project-preview">
+              <div class="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item">
+                    <img src="/assets/images/z.png" alt="Snip: Smart Clipboard Manager Preview 1" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/z.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/x.png" alt="Snip: Smart Clipboard Manager Preview 2" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/x.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/ccc.png" alt="Snip: Smart Clipboard Manager Preview 3" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/ccc.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/vvvv.png" alt="Snip: Smart Clipboard Manager Preview 4" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/vvvv.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/bvbv.png" alt="Snip: Smart Clipboard Manager Preview 5" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/bvbv.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/d.png" alt="Snip: Smart Clipboard Manager Preview 6" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/d.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <button class="carousel-control carousel-prev">
+                  <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <button class="carousel-control carousel-next">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+                <div class="carousel-indicators">
+                  <div class="carousel-indicator active"></div>
+                  <div class="carousel-indicator"></div>
+                  <div class="carousel-indicator"></div>
+                  <div class="carousel-indicator"></div>
+                  <div class="carousel-indicator"></div>
+                  <div class="carousel-indicator"></div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="project-title">Snip: Smart Clipboard Manager</h4>
+
+            <div class="project-tags">
+              <span class="project-tag">
+                <ion-icon name="code-slash-outline"></ion-icon>
+                TypeScript
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-react"></ion-icon>
+                React
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-react"></ion-icon>
+                React Native
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-rust"></ion-icon>
+                Rust
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-css3"></ion-icon>
+                Tailwind CSS
+              </span>
+              <span class="project-tag">
+                <ion-icon name="desktop-outline"></ion-icon>
+                Tauri
+              </span>
+              <span class="project-tag">
+                <ion-icon name="code-slash-outline"></ion-icon>
+                System APIs
+              </span>
+              <span class="project-tag">
+                <ion-icon name="flash-outline"></ion-icon>
+                Vite
+              </span>
+            </div>
+
+            <div class="project-description">
+              <ul class="work-points" style="padding-left: 20px; margin: 10px 0;">
+                <li>Built an intelligent clipboard manager that automatically captures text, code snippets, images, links, and files into an organized timeline of searchable cards enriched with context like source app and timestamp.</li>
+                <li>Integrated a conversational search bar that supports natural-language queries (e.g. "show me the JSON from yesterday") to instantly filter and retrieve relevant snippets.</li>
+                <li>Currently working on making the app cross-platform across macOS and iOS to enable seamless clipboard syncing and universal access to saved snippets.</li>
+              </ul>
+            </div>
+
+            <div class="project-meta">
+                <div class="project-date">
+                Ongoing
+                </div>
+                <div class="project-links">
+                <a href="https://github.com/Hetp04/ClipboardApplication" class="project-link">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-preview">
+              <div class="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item">
+                    <img src="/assets/images/meme2.png" alt="MemeStudy AI Learning Assistant Preview">
+                  </div>
+                  <div class="carousel-item video-item">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/TcF87fI3IfA" title="Memeify Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <button class="carousel-control carousel-prev">
+                  <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <button class="carousel-control carousel-next">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+                <div class="carousel-indicators">
+                  <div class="carousel-indicator active"></div>
+                  <div class="carousel-indicator"></div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="project-title">MemeStudy: AI Learning Assistant</h4>
+
+            <div class="project-tags">
+              <span class="project-tag">
+                <ion-icon name="logo-react"></ion-icon>
+                React
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-html5"></ion-icon>
+                HTML/CSS
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-python"></ion-icon>
+                Python
+              </span>
+              <span class="project-tag">
+                <ion-icon name="server-outline"></ion-icon>
+                Flask
+              </span>
+              <span class="project-tag">
+                <ion-icon name="server-outline"></ion-icon>
+                SQLite
+              </span>
+              <span class="project-tag">
+                <ion-icon name="cloud-outline"></ion-icon>
+                GroqAPI
+              </span>
+            </div>
+
+            <p class="project-description">
+              A learning platform that transforms traditional studying into an engaging experience by generating relevant memes for user-created flashcards and questions, making education both fun and memorable.
+            </p>
+
+            <div class="project-meta">
+                <div class="project-date">
+                    July 2024 - July 2024
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/paremeter373/Memeify-Project" class="project-link">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=TcF87fI3IfA" class="project-link">
+                        <ion-icon name="open-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-preview">
+              <div class="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item">
+                    <img src="/assets/images/qq.png" alt="Annotation Tool Screenshot - QQ" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/qq.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/uu.png" alt="Annotation Tool Screenshot - UU" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/uu.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/kk.png" alt="Annotation Tool Screenshot - KK" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/kk.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/mm.png" alt="Annotation Tool Screenshot - MM" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/mm.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/vv.png" alt="Annotation Tool Screenshot - VV" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/vv.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/zz.png" alt="Annotation Tool Screenshot - ZZ" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/zz.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/xx.png" alt="Annotation Tool Screenshot - XX" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/xx.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/oo.png" alt="Annotation Tool Screenshot - OO" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/oo.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <button class="carousel-control carousel-prev">
+                  <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <button class="carousel-control carousel-next">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+                <div class="carousel-indicators">
+                  <div class="carousel-indicator active"></div>
+                  <div class="carousel-indicator"></div>
+                  <div class="carousel-indicator"></div>
+                  <div class="carousel-indicator"></div>
+                  <div class="carousel-indicator"></div>
+                  <div class="carousel-indicator"></div>
+                  <div class="carousel-indicator"></div>
+                  <div class="carousel-indicator"></div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="project-title">Annotation Tool</h4>
+
+            <div class="project-tags">
+              <span class="project-tag">
+                <ion-icon name="logo-html5"></ion-icon>
+                HTML
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-css3"></ion-icon>
+                CSS
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-react"></ion-icon>
+                React
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-firebase"></ion-icon>
+                Firebase
+              </span>
+              <span class="project-tag">
+                <ion-icon name="server-outline"></ion-icon>
+                SQLite
+              </span>
+            </div>
+
+            <p class="project-description">
+              Developing a full-stack annotation tool to streamline data labeling and support training Large Language Models. This tool enables the extraction of critical information such as labels, codes, and key phrases directly from text, significantly reducing the time and effort required for manual annotation.
+            </p>
+
+            <div class="project-meta">
+                <div class="project-date">
+                    May 2024 - Present
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Hetp04/Annotation-Tool" class="project-link">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-preview">
+              <div class="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item">
+                    <img src="/assets/images/20.png" alt="Certification Management System Screenshot 1">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/20.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/21.png" alt="Certification Management System Screenshot 2">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/21.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/22.png" alt="Certification Management System Screenshot 3">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/22.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/23.png" alt="Certification Management System Screenshot 4">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/23.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/24.png" alt="Certification Management System Screenshot 5">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/24.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <button class="carousel-control carousel-prev">
+                  <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <button class="carousel-control carousel-next">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+                <div class="carousel-indicators">
+                  <div class="carousel-indicator active"></div>
+                  <div class="carousel-indicator"></div>
+                  <div class="carousel-indicator"></div>
+                  <div class="carousel-indicator"></div>
+                  <div class="carousel-indicator"></div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="project-title">Certification Management System</h4>
+
+            <div class="project-tags">
+              <span class="project-tag">
+                <ion-icon name="logo-react"></ion-icon>
+                React
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-nodejs"></ion-icon>
+                Node.js
+              </span>
+              <span class="project-tag">
+                <ion-icon name="server-outline"></ion-icon>
+                MongoDB
+              </span>
+              <span class="project-tag">
+                <ion-icon name="server-outline"></ion-icon>
+                Express.js
+              </span>
+            </div>
+
+            <p class="project-description">
+              A comprehensive platform enabling users to complete courses, earn certifications, and manage their skills through an intuitive interface with authentication. Users will be able to track their progress and receive certifications upon completing specific courses. The platform will also offer personalized learning paths.
+            </p>
+
+            <div class="project-meta">
+                <div class="project-date">
+                    Oct 2024 - April 2025
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Hetp04/Certification-Management-System-YOU-" class="project-link">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-preview">
+              <div class="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item">
+                    <img src="/assets/images/ff.png" alt="Kangara Ecommerce Frontend Preview 1" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/ff.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/gg.png" alt="Kangara Ecommerce Frontend Preview 2" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/gg.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/hh.png" alt="Kangara Ecommerce Frontend Preview 3" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/hh.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/ii.png" alt="Kangara Ecommerce Frontend Preview 4" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/ii.png')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item video-item">
+                    <video controls muted loop style="width: 100%; height: 100%; object-fit: contain;">
+                      <source src="/assets/images/fan.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+                <button class="carousel-control carousel-prev">
+                  <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <button class="carousel-control carousel-next">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+                <div class="carousel-indicators">
+                  <div class="carousel-indicator active"></div>
+                  <div class="carousel-indicator"></div>
+                  <div class="carousel-indicator"></div>
+                  <div class="carousel-indicator"></div>
+                  <div class="carousel-indicator"></div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="project-title">Kangara: Frontend Ecommerce Website</h4>
+
+            <div class="project-tags">
+              <span class="project-tag">
+                <ion-icon name="logo-html5"></ion-icon>
+                HTML5
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-css3"></ion-icon>
+                CSS3
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-javascript"></ion-icon>
+                JavaScript
+              </span>
+              <span class="project-tag">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+                Responsive
+              </span>
+            </div>
+
+            <div class="project-description">
+              <ul class="work-points" style="padding-left: 20px; margin: 10px 0;">
+                <li>Built dynamic UI components using native JavaScript, including parallax effects, responsive carousels, and interactive product modals.</li>
+                <li>Created a fully responsive frontend using mobile-first design and CSS media queries.</li>
+                <li>Designed an intuitive navigation system with dropdown menus and sticky headers.</li>
+              </ul>
+            </div>
+
+            <div class="project-meta">
+              <div class="project-date">
+                Feb 2024
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-preview">
+              <div class="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item">
+                    <img src="/assets/images/a0.jpg" alt="Sonivo - Smart Music Composer Preview 1" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/a0.jpg')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/a1.jpg" alt="Sonivo - Smart Music Composer Preview 2" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/a1.jpg')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/a2.jpg" alt="Sonivo - Smart Music Composer Preview 3" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/a2.jpg')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/a4.jpg" alt="Sonivo - Smart Music Composer Preview 4" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/a4.jpg')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/a6.jpg" alt="Sonivo - Smart Music Composer Preview 5" loading="lazy">
+                    <button class="fullscreen-icon" onclick="openModal('/assets/images/a6.jpg')">
+                      <ion-icon name="expand-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="carousel-item video-item">
+                    <video controls muted loop style="width: 100%; height: 100%; object-fit: contain;">
+                      <source src="/assets/images/demo.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+                <button class="carousel-control carousel-prev">
+                  <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <button class="carousel-control carousel-next">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+                <div class="carousel-indicators">
+                  <div class="carousel-indicator active"></div>
+                  <div class="carousel-indicator"></div>
+                  <div class="carousel-indicator"></div>
+                  <div class="carousel-indicator"></div>
+                  <div class="carousel-indicator"></div>
+                  <div class="carousel-indicator"></div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="project-title">Sonivo - Smart Music Composer</h4>
+
+            <div class="project-tags">
+              <span class="project-tag">
+                <ion-icon name="code-slash-outline"></ion-icon>
+                TypeScript
+              </span>
+              <span class="project-tag">
+                <ion-icon name="server-outline"></ion-icon>
+                MongoDB
+              </span>
+              <span class="project-tag">
+                <i class="fab fa-svelte"></i>
+                SvelteKit
+              </span>
+              <span class="project-tag">
+                <i class="fab fa-css3"></i>
+                Tailwind CSS
+              </span>
+              <span class="project-tag">
+                <ion-icon name="musical-note-outline"></ion-icon>
+                Web Audio API
+              </span>
+            </div>
+
+            <div class="project-description">
+              <ul class="work-points" style="padding-left: 20px; margin: 10px 0;">
+                <li>Developed a piano improvisation platform that suggests notes to enhance compositions, generates custom backing tracks to harmonize music, and includes a frequency chart to assist beginners with music theory.</li>
+                <li>Designed an innovative composition experience that combined dynamic note suggestions with user control, earning recognition as a winner at United Hacks 2025.</li>
+                <li>Used the Web Audio API and custom Svelte components to add real-time playback and visual feedback, making the music creation process more interactive.</li>
+              </ul>
+            </div>
+
+            <div class="project-meta">
+              <div class="project-date">
+                Jan 2025
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Hetp04/sonivoapp" class="project-link">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="https://devpost.com/software/sonivo" class="project-link" target="_blank">
+                  <ion-icon name="open-outline"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-preview">
+              <img src="/assets/images/git2.png" alt="Git Insight Preview" loading="lazy">
+            </div>
+
+            <h4 class="project-title">Git Insight</h4>
+
+            <div class="project-tags">
+              <span class="project-tag"><ion-icon name="code-slash-outline"></ion-icon> TypeScript</span>
+              <span class="project-tag"><ion-icon name="logo-nodejs"></ion-icon> Node.js</span>
+              <span class="project-tag"><ion-icon name="logo-react"></ion-icon> Next.js</span>
+              <span class="project-tag"><ion-icon name="server-outline"></ion-icon> Express.js</span>
+              <span class="project-tag"><ion-icon name="server-outline"></ion-icon> Prisma</span>
+              <span class="project-tag"><ion-icon name="server-outline"></ion-icon> PostgreSQL</span>
+              <span class="project-tag"><ion-icon name="logo-github"></ion-icon> GitHub API</span>
+              <span class="project-tag"><ion-icon name="cube-outline"></ion-icon> Docker</span>
+              <span class="project-tag"><ion-icon name="albums-outline"></ion-icon> Redux</span>
+            </div>
+
+            <div class="project-description">
+              <ul class="work-points" style="padding-left: 20px; margin: 10px 0;">
+                <li>Built a developer tool that summarizes GitHub commits using Groq, auto-generates descriptive commit messages, and visualizes project history through an interactive timeline.</li>
+                <li>Implemented smart filtering by user, file, and tags to help users trace code changes and understand the project.</li>
+              </ul>
+            </div>
+
+            <div class="project-meta">
+              <div class="project-date">
+                July 2024- Aug 2024
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+      </article>
+
+   
+
+      <article class="contact" data-page="contact" id="contact">
+        <section class="contact-form">
+          <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form id="contact-form">
+            <input type="hidden" name="access_key" value="7e8fb128-9e5d-48ce-9b59-4921e1b6c7e2">
+            
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <div class="input-wrapper">
+              <input type="text" name="name" class="form-input" placeholder="Your name" required>
+              <input type="email" name="email" class="form-input" placeholder="Your email" required>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your message" required></textarea>
+
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+    </div>
+
+  </main>
+
+  <!-- Modal for fullscreen images -->
+  <div class="modal" id="imageModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+      <img id="modalImage" src="" alt="Fullscreen Image">
+    </div>
+  </div>
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/carousel.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+
+  
+
+</html>
